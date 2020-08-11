@@ -13,7 +13,7 @@
   height : 90vh;
   justify-content: center;
   align-items: center;
-  /* background-color: rgba(1, 160, 160, 0.767); */
+  background-color: rgba(1, 160, 160, 0.767);
 }
 
 .newbody1 {
@@ -22,8 +22,7 @@
   height : 90vh;
   justify-content: center;
   align-items: center;
-  background-color: rgba(1, 160, 160, 0.767);
-  padding-bottom: 10%;
+  /* background-color: rgba(1, 160, 160, 0.767); */
 }
 
 h2 {
@@ -40,7 +39,7 @@ h2 {
   text-align: center;
 }
 
-.sub-head {
+h4 {
   text-align: center;
   font-size: 2rem;
   font-weight: 400;

@@ -1,7 +1,8 @@
 import React from 'react';
 
-function BreakInterval(props) {
-    const length = props.breakLength
+function SessionLength(props) {
+
+    const length= props.sessionLength
 
     function decreaseTimerHandler(){
 
@@ -15,7 +16,7 @@ function BreakInterval(props) {
             return;
         }
 
-        props.onBreakIntervalChange(length-1)
+        props.onSessionLengthChange(length-1)
     }
 
     function increaseTimerHandler(){
@@ -25,18 +26,18 @@ function BreakInterval(props) {
             return;
         }
 
-        props.onBreakIntervalChange(length+1)
+        props.onSessionLengthChange(length+1)
     }
     
     return (
         <section>
-            <h4 className="sub-head" >Break Length</h4>
+            <h4>Session Length</h4>
             <section className="interval-container">
                 <button className="button1" onClick={decreaseTimerHandler} >
                     Down
                 </button>
-                    <p className="interval-length">{props.breakLength}</p>
-                <button className="button1" onClick={increaseTimerHandler}>
+                    <p className="interval-length" >{props.sessionLength}</p>
+                <button className="button1" onClick={increaseTimerHandler} >
                     Up
                 </button>
             </section>
@@ -44,4 +45,4 @@ function BreakInterval(props) {
     );
 }
 
-export default BreakInterval;
+export default SessionLength;
